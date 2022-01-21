@@ -1,0 +1,83 @@
+
+Download nodejs:
+https://nodejs.org/en/download/
+https://nodejs.org/dist/v16.13.2/node-v16.13.2-x64.msi
+
+2) Install git bash
+Git Setup
+https://git-scm.com/downloads/
+
+GitBash
+https://gitforwindows.org/
+
+Tutorial for setting git:
+https://www.youtube.com/watch?v=wSQ-vCAiOw0&list=PL7slAxcLWlcCetian9RRoVZ_N3Ct5L_h3&index=2
+
+3) Configure the git profile
+sys@DESKTOP-8IL8KBA MINGW64 ~
+$ git config --global user.name "Venkat Parsi"
+
+sys@DESKTOP-8IL8KBA MINGW64 ~
+$ git config --global user.email "parsi.venkatramana@gmail.com"
+
+-============
+
+3) Creating a repo and start coding
+
+…or create a new repository on the command line
+echo "# angularlearning2022" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin git@github.com:venkatparsi/angularlearning2022.git
+git push -u origin master
+
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:venkatparsi/angularlearning2022.git
+git branch -M master
+git push -u origin master
+
+4) ssh key gen :
+ ssh-keygen -t rsa -b 4096 -C "parsi.venkatramana@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/sys/.ssh/id_rsa): venkatparsi
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in venkatparsi
+Your public key has been saved in venkatparsi.pub
+
+5) Add ssh tolocal ssh agent
+sys@DESKTOP-8IL8KBA MINGW64 ~
+$ eval $(ssh-agent)
+Agent pid 1523
+
+sys@DESKTOP-8IL8KBA MINGW64 ~
+$ ssh-add ~/venkatparsi
+Identity added: /c/Users/sys/venkatparsi (parsi.venkatramana@gmail.com)
+
+sys@DESKTOP-8IL8KBA MINGW64 ~
+
+6)github commands
+
+sys@DESKTOP-8IL8KBA MINGW64 /e/projects/angularlearning2022 (master)
+$ git pull
+Already up to date.
+
+sys@DESKTOP-8IL8KBA MINGW64 /e/projects/angularlearning2022 (master)
+$ git log
+commit 0c3ac48c415e14c0d66ca08d5fdf6b7df42052f1 (HEAD -> master, origin/master, origin/HEAD)
+Author: Venkat Parsi <parsi.venkatramana@gmail.com>
+Date:   Fri Jan 21 22:10:43 2022 +0530
+
+    Initial commit
+
+sys@DESKTOP-8IL8KBA MINGW64 /e/projects/angularlearning2022 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+sys@DESKTOP-8IL8KBA MINGW64 /e/projects/angularlearning2022 (master)
