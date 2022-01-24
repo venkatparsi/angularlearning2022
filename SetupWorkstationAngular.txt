@@ -81,3 +81,8 @@ Your branch is up to date with 'origin/master'.
 nothing to commit, working tree clean
 
 sys@DESKTOP-8IL8KBA MINGW64 /e/projects/angularlearning2022 (master)
+
+7) Setup vscode plugins.
+ a) Autosave in vscode.  
+    enable under File menu - > Auto Save option. check it.
+       
