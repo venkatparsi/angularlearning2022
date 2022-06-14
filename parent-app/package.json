@@ -41,6 +41,7 @@
     "@angular-devkit/build-angular": "~13.2.2",
     "@angular/cli": "~13.2.2",
     "@angular/compiler-cli": "~13.2.0",
+    "@angular/localize": "^13.2.3",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "faker": "5.5.3",
