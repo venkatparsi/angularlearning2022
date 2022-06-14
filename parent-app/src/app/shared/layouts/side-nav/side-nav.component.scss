@@ -1,0 +1,28 @@
+.fixed-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--ccsa-grey-nine);
+    padding: 1rem 1.5rem;
+    img{
+        height: 4rem;
+        padding: 1rem 0rem;
+    }
+
+    mat-divider{
+        height: 0.05rem;
+        background: var(--ccsa-grey-seven);
+    }
+    .org-logo-container{
+        .org-logo{
+            height: 4rem;
+            width: 4rem;
+            margin-bottom: 2rem;
+            background-color: var(--ccsa-placeholder-color);
+            border-radius: 50%;
+        }
+    }
+}

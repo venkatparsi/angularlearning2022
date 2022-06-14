@@ -1,0 +1,95 @@
+.page-container{
+  background-color: #f8f9fa;
+  margin: 12px;
+  padding: 10px;
+}
+  
+.student-card{
+  box-shadow: 0 8px 8px -6px #aaaaaa;
+  background-color: white;
+  border-radius: 10px;
+}
+.header-image {
+  background-image: url('../../../assets/images/avinashroa.png');
+  background-size: cover;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+}
+.header-section{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  gap:10px
+}
+.header-badge{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px; 
+  --box-shadow: 0 8px 8px -6px #aaaaaa; 
+  background-color: white;
+  border:1px solid #f8f9fa; 
+}
+.header-left{
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  flex: 3;
+}
+.header-right{
+
+}
+.header-title, .header-subtitle{
+  color: rgb(77,137,235);
+  font-size: 1.5em;
+  padding:2px;
+  font-weight: bold; 
+}
+.header-subtitle{
+ color: gray;
+ font-size: 1em; 
+ padding: 2px;
+}
+
+.metric-name{
+  color:gray;padding:5px;
+  font-size: 0.8em;
+}
+
+.student-card{
+  padding:10px;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.metric-value{
+  color:mediumslateblue; font-weight: 600; font-size:1.1em; padding:5px;
+}
+
+  .badge-card{
+      min-width: 150 px;
+      padding-left: 20%;
+      padding-right: 20%;
+  }
+  .block_container {
+    display: inline-block;
+    /* justify-content: center; */
+  }
+  .bloc1{
+      float: left;
+  }
+  .bloc2{
+      float: right;
+  }
+  .div-left{
+    float:left;
+    padding-left:10px;
+}
+.div-right{
+    float:right;
+    padding-right:10px;
+}

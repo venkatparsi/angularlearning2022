@@ -1,0 +1,16 @@
+.banner{
+  color: white;
+  background-color: rgb(51, 98, 180);
+}
+.mat-card-content{
+    display: inline-block;
+  }
+  .material-icons {
+    position: relative;
+    top: 6px; 
+    
+}
+.mat-card-subtitle{
+  color: black;
+  font-weight: bold;
+}

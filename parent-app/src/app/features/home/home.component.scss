@@ -1,0 +1,11 @@
+#content {
+    width: 100%;
+    height: calc(100vh - var(--ccsa-header-height));
+    transition: all 0.3s;
+    overflow: auto;
+    background-color: var(--ccsa-grey-one);
+}
+
+.mat-tab-label{
+    height: 60px;
+}

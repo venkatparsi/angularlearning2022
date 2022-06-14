@@ -1,0 +1,83 @@
+<section style="min-height: 90vh;" fxLayout="column" class="radial-gradient">
+    <div fxLayout="row" class="example-button-row" style="padding: 2px;   margin:15px;   margin-top:30px; "
+        fxLayoutAlign="start center">
+        <button mat-stroked-button routerLink="/explore"
+            style="border:none ; color:'white' ; text-align: left; padding: 0;" class="">
+            <mat-icon aria-hidden="false" class="material-icons-outlined">chevron_left</mat-icon>
+            Back
+        </button>
+        <div fxFlex="60"></div>
+        <button mat-stroked-button color="primary" class="outline">
+            <mat-icon inline=true aria-hidden="false" class="material-icons-outlined">edit</mat-icon>
+            Edit
+        </button>
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="center center" class="example-button-row">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Shiba Inu" style=" width:'100px'; height: '100px'; ;border-radius: 50%;
+         margin: 10px;">
+        <h4 style="color:white; ">Meenakshi Rao
+        </h4>
+    </div>
+
+    <mat-card style="margin-left:1px; margin-right:1px; border-top-left-radius: 20px;
+    border-top-right-radius: 20px; border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;" [class.mat-elevation-z0]="true">
+        <form class="example-container">
+            <div style="padding: 5px; margin: 5px;">
+                <h6 style="color: gray;padding: 2px;margin: 0px; margin-bottom: 3px;">AGE</h6>
+                <label><span contentEditable="true" style="font-weight: 600; font-size: small;">44 </span><span
+                        style="font-weight: 600; font-size: small;">Years Old</span></label>
+            </div>
+            <div style="padding: 5px; margin-top: 15px;">
+                <h6 style="color: gray; padding: 2px;margin: 0px; margin-bottom: 3px;">MOBILE</h6>
+                <label><span contentEditable="true"
+                        style="font-weight: 600; font-size: small; ">88864011322</span></label>
+            </div>
+
+            <div style="padding: 5px; margin-top: 15px;">
+                <h6 style="color: gray; padding: 2px;margin: 0px; margin-bottom: 3px;">ADDRESS</h6>
+                <label><span contentEditable="true" style="font-weight: 600; font-size: small;">House No.11243,Amba
+                        Village,Karchana, Allahabad, Uttar Pradesh</span></label>
+            </div>
+
+        </form>
+
+    </mat-card>
+
+
+    <div style="background-color: #f1f1f1;">
+        <mat-card style="margin-top:20px; border-top-right-radius: 12px;border-top-left-radius: 12px;">
+            <div style="padding: 5px; margin-top: 15px;">
+                <label><span contentEditable="true" style="font-weight: 600; font-size: small; ">Children</span></label>
+            </div>
+           
+            <span *ngFor="let child of childInfo">
+                <span class='app-profile-pic-card' [inData]="child" >
+                </span>
+            </span> 
+
+            
+        </mat-card>
+
+
+        <mat-card style="margin-top:20px;
+border-top-right-radius: 12px;border-top-left-radius: 12px;">
+            <div style="padding: 5px; margin-top: 15px;">
+                <label><span contentEditable="true" style="font-weight: 600; font-size: small; ">Areas of
+                        Interest</span></label>
+            </div>
+        </mat-card>
+
+        <mat-card style="margin-top:20px;
+border-top-right-radius: 12px;border-top-left-radius: 12px;">
+            <div style="padding: 5px; margin-top: 15px;">
+                <label><span contentEditable="true" style="font-weight: 600; font-size: small; ">Areas of
+                        End</span></label>
+            </div>
+        </mat-card>
+    </div>
+
+
+
+</section>

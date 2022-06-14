@@ -1,0 +1,83 @@
+<div class="page-container">
+ <app-profile-header-card name="Meenakshi" heading="Let's Explore"></app-profile-header-card>
+  <div >&nbsp;</div>
+  <div style=" 
+   box-shadow: 0 8px 8px -6px #aaaaaa; 
+   background-color: white;
+   border:1px solid #f8f9fa; 
+   border-radius: 10px; 
+   margin: 2px; padding:12px">
+
+  <div style=" padding-top: 35px; ">
+    <mat-card-subtitle style="margin:5px; font-weight: bold;">Find your favourite topics here!</mat-card-subtitle>
+  </div>
+  <mat-form-field style="margin:5px;"  class="item-full-width">
+    <span matPrefix> </span>
+    <input type="tel" matInput placeholder="What do you want to explore?" name="search">
+    <button matSuffix mat-button>
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <mat-list>
+    <div  style="font-weight: bold; margin-top:10px; margin-bottom: 10px;">Trending Topics</div>
+    <!--
+    <div class="topics trend-topics-container" style="border-bottom: 1px solid rgb(216, 213, 213);">
+      <div class="topic" *ngFor="let folder of folders">
+        <div class="topic-icon"></div>
+        <div class="topic-details">
+          <div mat-line style="margin-bottom: 5px">
+            <h4 style="font-weight: bold;">{{folder.name}}</h4>
+          </div>
+          <div mat-line style="color: gray; font-size: 0.7em;"> {{folder.updated | date}} </div>
+        </div>
+
+        <div style="margin-top: 10px;" class="topic-action">
+          <button mat-button class="primary">Learn</button>
+        </div>
+
+      </div>
+    </div>-->
+
+    <div class="columns" *ngFor="let folder of folders">
+      <div class="column22">
+        <div class="topic-icon" [ngStyle]="{'background-color': getRandomColor()}"></div>
+        
+      </div>
+      <div class="column66">
+        <div class="topic-detailss">
+          <div mat-line >
+            <h4 style="font-weight: bold;">{{folder.name}}</h4>
+          </div>
+          <div style="color: gray; font-size: 0.7em; margin-top: 5px;"> {{folder?.updated | date}} </div>
+        </div>
+     </div>
+     <div class="column22">
+      <div class="topic-action">
+        <button mat-button class="primary">Learn</button>
+      </div>
+     </div>
+   </div>
+</mat-list>
+</div>
+
+<div style=" background-color: white; box-shadow: 0 8px 8px -6px #aaaaaa; border:1px solid #f8f9fa; border-radius: 1px; margin: 1px; padding:2px; margin-top: 15px;">
+
+<div style="font-weight: bold; margin: 15px;">All Topics</div>
+
+<div class="articles">
+  <div class="article" *ngFor="let note of notes">
+    <div class="article-icon" [ngStyle]="{'background-color': getRandomColor()}"></div>
+    <div class="article-details">
+      <div mat-line>
+        <h4 style="font-weight: bold; line-height: 1.2em;">{{note.name}}</h4>
+      </div>     
+      <div mat-line style=" margin-top:10px; color: gray; font-size: 0.8em; 
+      text-align: left; "> {{note.updated |
+        date}}
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

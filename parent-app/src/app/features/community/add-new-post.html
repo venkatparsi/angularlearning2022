@@ -1,0 +1,11 @@
+<div mat-dialog-content>
+  <p>Post a Question or share something</p>
+  <mat-form-field appearance="fill">
+    <input matInput [(ngModel)]="data.postContent">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+  <!-- <button mat-button [mat-dialog-close]="data.postContent" cdkFocusInitial>Post</button> -->
+  <button mat-button (click)="onPost(data.postContent)" cdkFocusInitial>Post</button>
+</div>

@@ -1,0 +1,43 @@
+<div class="fixed-nav">
+    <div>
+        <div *ngFor="let menuItem of menuList;let i=index;" class="d-flex flex-column">
+            <a routerLink="/{{menuItem.route}}" (click)="onMenuChange(menuItem)">
+                <img src="assets/images/side-nav/icons/{{menuItem.iconName}}" alt="">
+            </a>
+            <mat-divider *ngIf="i==0" class="my-2"></mat-divider>
+        </div>
+    </div>
+
+    <div class="org-logo-container">
+        <!-- <img src="" alt="org-logo"> -->
+        <div class="org-logo">
+
+        </div>
+    </div>
+
+</div>
+<!--  {{ 'COMMON.LABELS.'+ menuItem.title | translate }} -->
+<!-- <nav class="navbar navbar-light ">
+    <div class="container-fluid">
+        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling">     <span class="navbar-toggler-icon"></span></button>
+
+
+        <div class="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class=" offcanvas-header   ">
+                <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item" *ngFor="let menuItem of menuList" class="nav">
+                        <a routerLink="/{{menuItem.route}}" (click)="onMenuChange(menuItem)">
+                            <img src="assets/images/side-nav/icons/{{menuItem.iconName}}" alt="">
+                        </a>
+                    </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</nav> -->

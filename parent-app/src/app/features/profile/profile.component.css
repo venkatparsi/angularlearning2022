@@ -1,0 +1,17 @@
+.outline{
+    outline: 1px solid white;
+    color:white;
+    border: none;
+    border-radius: 20px;  
+}
+
+.radial-gradient {
+    background-image: radial-gradient(farthest-corner at 100% 5%,
+        rgb(123, 186, 238) 5%, rgb(26, 114, 228) 100%);
+  }
+
+  .header-image {
+    background-image: url('../../../assets/images/meenakshiRao.png');
+    background-size: cover;
+    cursor: pointer;
+  }

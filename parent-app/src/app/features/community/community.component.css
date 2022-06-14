@@ -1,0 +1,18 @@
+.example-card{
+  min-width: 200px;
+}
+.example-add-post,.example-posts{
+  min-width: 200px;
+}
+
+.posts-header-left{
+  display: inline;
+}
+.posts-header-right{
+  display: inline;
+  justify-content: right;
+}
+.example-header-image{
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

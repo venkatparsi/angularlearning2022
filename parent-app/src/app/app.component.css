@@ -1,0 +1,57 @@
+.main-navs {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5em;
+    width: 100vw;
+    margin-left:40px;
+   
+}
+.mat-tab-link{
+    min-width: 100px;
+    border-top: 1px solid #e5e5e5;
+    z-index: 100;
+    background: white;
+    opacity: 1;
+}
+.mat-tab-link-container{
+    box-shadow: none;
+}
+
+.app{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 430px;
+      border: 1px solid rgb(209, 197, 197);
+      border-radius: 15px;
+      padding: 10px;
+      overflow-y: scroll;
+}
+.main{
+    height: 80vh;
+}
+
+div#topdiv, div#bottomdiv{
+	position:fixed; 
+	left: 0px;
+	width: 100%;
+	color: #CCC;
+	
+}
+div#topdiv{top:0px;}
+div#bottomdiv {bottom:0px;}
+
+.parent {
+    display: flex;
+    --height: 300px; /* Or whatever */
+  }
+  
+  .child {
+    --width: 100px;  /* Or whatever */
+    --height: 100px; /* Or whatever */
+    margin: auto;  /* Magic! */
+    max-width: 430px;
+    min-width: 220px;
+  }

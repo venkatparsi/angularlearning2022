@@ -1,0 +1,10 @@
+<div class="fixed-sub-nav py-3 px-4">
+    <div class="py-2">
+        <h6> {{ 'COMMON.LABELS.'+ menuDetails.title | translate }}</h6>
+    </div>
+    <div *ngFor="let subMenuItem of menuDetails.subMenu" class="py-2">]
+        <!--<a routerLink="/{{currentActiveRoute}}/{{subMenuItem.route}}" (click)="onSubMenuChange(subMenuItem)">
+            {{ 'COMMON.LABELS.'+ subMenuItem.title | translate }}
+        </a>-->
+    </div>
+</div>

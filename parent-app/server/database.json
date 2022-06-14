@@ -1,0 +1,118 @@
+{
+  "parents": [
+    {
+      "id": 1,
+      "children": [
+        1,
+        2,
+        3
+      ],
+      "name": "Venkat Parsi",
+      "age": 12,
+      "imageUrl": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    }
+  ],
+  "children": [
+    {
+      "id": 1,
+      "parent": 1,
+      "name": "Jai Guru Vishwak",
+      "age": 12,
+      "imageUrl": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "marks": [
+        5,
+        3,
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "id": 2,
+      "parent": 1,
+      "name": "Sri Yuktha Lakshmi",
+      "age": 12,
+      "imageUrl": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "marks": [
+        5,
+        3,
+        11,
+        2,
+        6
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "name": "Sakila Peddi",
+      "updated": "1/1/22",
+      "content": "When 8-year-old Cark Reimer and his 6-year-old sister Carla knock on the front door of their new neighbor’s house, hoping that they have children they can play with, they get something way better – when the door is opened by a man wearing the scariest, coolest monster mask! It turns out their neighbor, Mr. Neewollah (spell it backwards…), creates monsters for a movie studio, and when he invites Cark, Carla, and their parents to join him for a movie shoot on the tropical island of Tahka Paka, how can they resist? ",
+      "count_replies": 10,
+      "liked": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "count_likes": 2,
+      "image": "https://material.angular.io/assets/img/examples/shiba1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Venkat 2",
+      "updated": "1/3/22",
+      "content": "When 8-year-old Cark Reimer and his 6-year-old sister Carla knock on the front door of their new neighbor’s house, hoping that they have children they can play with, they get something way better – when the door is opened by a man wearing the scariest, coolest monster mask! It turns out their neighbor, Mr. Neewollah (spell it backwards…), creates monsters for a movie studio, and when he invites Cark, Carla, and their parents to join him for a movie shoot on the tropical island of Tahka Paka, how can they resist? ",
+      "count_replies": 10,
+      "liked": [
+        "2",
+        "4",
+        "1"
+      ],
+      "count_likes": 1,
+      "image": "https://material.angular.io/assets/img/examples/shiba1.jpg"
+    },
+    {
+      "name": "sakila",
+      "updated": "2022-06-04T07:42:05.887Z",
+      "content": "testing adding new Post",
+      "count_replies": 0,
+      "liked": [],
+      "count_likes": 0,
+      "image": "https://material.angular.io/assets/img/examples/shiba1.jpg",
+      "id": 3
+    }
+  ],
+  "points": [
+    {
+      "name": "Avinash Rao",
+      "marks": [
+        5,
+        3,
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "name": "Rakhi Rao",
+      "marks": [
+        5,
+        5,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Jai Guru Vishwak",
+      "marks": [
+        8,
+        4,
+        5,
+        6,
+        4
+      ]
+    }
+  ]
+}

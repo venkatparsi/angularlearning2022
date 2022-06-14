@@ -1,0 +1,35 @@
+Visual Studio Code:
+
+Download the visual studiocode  from the given link:
+
+https://code.visualstudio.com/docs/setup/linux
+
+Open terminal and run the below command.
+
+cd to the downloads directory.
+
+<file> is the name of the downloaded file
+
+  2. sudo apt install ./<file>.deb
+
+Angular Installation:
+
+Step 1: open terminal
+
+Step 2: enter command "sudo apt-get upgrade"
+
+Step 3: enter command "sudo apt-get update"
+
+Step 4: enter command "curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+Step 5: enter command "sudo apt-get install -y nodejs"
+
+Step 6: Check the node version using "node -v"
+
+Step 7: enter command "sudo apt install npm"
+
+Step 8: Check the node version using "npm -v"
+
+Step 9: enter command "sudo npm install -g @angular/cli"
+
+Step 10: Check the angular version using "ng version" it must be 13.2.2

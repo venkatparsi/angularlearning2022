@@ -1,0 +1,20 @@
+.radial-gradient {
+    background-image: radial-gradient(farthest-corner at 100% 5%,
+        rgb(150, 204, 248) 10%, rgb(76,140,221) 100%);
+  }
+
+  .rounded-corners{
+      border-radius: 20px; 
+  }
+
+  .profile-pic-card{
+   
+  }
+
+  .content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    width: 200px;
+}

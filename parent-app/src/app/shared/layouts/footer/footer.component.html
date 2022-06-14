@@ -1,0 +1,18 @@
+
+<nav mat-tab-nav-bar class=" mat-tab-group-inverted-header main-nav" >
+  
+  <a
+      mat-tab-link style="height: 60px; width: 40px;"
+      *ngFor="let link of navLinks"
+      routerLink="{{ link.location }}"
+      routerLinkActive
+      #rla="routerLinkActive"
+      [active]="rla.isActive"
+    >
+    <div style="padding: 10px;" >       
+        <mat-icon class="example-tab-icon">{{ link.icon }}</mat-icon>
+           <div>{{ link.label  }}</div>
+      </div>    
+    </a>
+  
+  </nav>

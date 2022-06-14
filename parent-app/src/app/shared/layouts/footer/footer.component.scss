@@ -1,0 +1,30 @@
+.main-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5em;
+    width: 100vw;
+    margin-left:40px;
+   
+}
+.mat-tab-link{
+    min-width: 120px;
+    border-top: 1px solid #e5e5e5;
+    z-index: 100;
+    background: white;
+    opacity: 1;
+}
+.mat-tab-link-container{
+    box-shadow: none;
+}
+
+.app{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.centered-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -1,0 +1,90 @@
+<section>
+    <div class="container-fluid">
+        <div class="content mt-2">
+            <div class="row pt-2">
+                <div class="col-1  col-md-4"> </div>
+                <div class="col col-md-4 mt-4 pt-5 pt-5">
+                    <h2 class="text-center pb-5 header">Welcome to Call Center Solutions Admin</h2>
+                    <div class="mt-4 card p-3">
+                        <form class="mt-5 col-md-10 justify-content-center" (submit)="loginUser(loginForm)"
+                            #loginForm="ngForm">
+                            <div class="row justify-content-center">
+
+                                <div class="  mb-4 pb-2 col-12 col-xl-8  col-md-12">
+                                    <div class="col-12  input-group ">
+                                        <!-- <span class="input-group-prepend">
+                                            <div class="input-group-text bg-transparent input-border-right-icon">
+                                                <img class="px-1 svgWidth" src="assets/images/recLogin/envelope.svg">
+                                            </div>
+                                        </span> -->
+                                        <input type="email" class="form-control  bg-transparent input-border-left-icon"
+                                            #userEmail="ngModel" name="userEmail" placeholder="Username"
+                                            aria-label="Username" ngModel required autocomplete="off">
+                                    </div>
+                                    <div class="col-12 error-text "><span
+                                            *ngIf="userEmail.invalid && userEmail.touched ">Please
+                                            enter valid username</span></div>
+
+
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="  mb-3 col-12 col-xl-8 col-md-12">
+                                    <div class="col-12  input-group ">
+                                        <!-- <div class="input-group-text bg-transparent input-border-right-icon">
+                                            <img class="px-1 mr-1 svgWidth" src="assets/images/recLogin/lock.svg">
+                                        </div> -->
+
+                                        <input type="password" [type]="hide ? 'password' : 'text'" name="userPassword"
+                                            ngModel required placeholder="Password" #userPassword="ngModel" autocomplete
+                                            minlength="1" class="form-control bg-transparent input-border-right-icon"
+                                            data-toggle="password">
+                                        <!-- <span class="input-group-append">
+                                            <div class="input-group-text bg-transparent input-border-left-icon">
+                                                <span class="material-icons" *ngIf="hide"
+                                                    [attr.aria-label]="'Show password'" (click)="hide = !hide"
+                                                    [attr.aria-pressed]="hide">
+                                                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="material-icons" *ngIf="!hide" (click)="hide = !hide"
+                                                    [attr.aria-label]="'Hide password'" [attr.aria-pressed]="!hide">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </span> -->
+                                    </div>
+                                    <div class=" col-12  error-text ">
+                                        <span *ngIf="userPassword.invalid && userPassword.touched "> Please enter
+                                            valid password</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="w-100 pt-5"></div>
+
+                                <div class="sign-in col-11 col-xl-6 col-md-6 col-sm-10 mt-5 pt-5">
+                                    <button class="inSign" type="submit" *ngIf="!showLoader" [disabled]="loginForm.invalid">Log In</button>
+
+                                    <div class="loadingIndicator mx-auto" *ngIf="showLoader">
+                                        <mat-spinner></mat-spinner>
+                                    </div>
+                              
+
+                                </div>
+                                <div class="w-100"></div>
+
+
+                            </div>
+                        </form>
+
+                    </div>
+
+
+                </div>
+                <div class="col-1  col-md-4"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</section>

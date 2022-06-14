@@ -1,0 +1,23 @@
+.profile-header-card {
+    min-width: 200px;
+    --box-shadow: 1px 15px 11px 0px #aaaaaa;
+    box-shadow: 0 8px 8px -6px #aaaaaa;
+    background-color: white;
+    border-radius: 1px;
+    margin: 1px;
+  }
+   
+  .header-image {
+    background-image: url('../../../../assets/images/meenakshiRao.png');
+    background-size: cover;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    box-shadow: 0 8px 8px -6px #aaaaaa;
+  }
+
+  .header-card{
+    display: flex;
+    align-items: center;
+    justify-content:  space-evenly;
+  }

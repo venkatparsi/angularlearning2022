@@ -1,0 +1,26 @@
+<div class="parent">
+
+<div class="child">
+    <router-outlet>  
+    </router-outlet>
+<div style="height: 150px;">&nbsp;</div>
+<div id="bottomdiv" class="parent">
+<nav mat-tab-nav-bar class="child mat-tab-group-inverted-header main-nav" >
+    <a
+      mat-tab-link style="height: 80px; width: 40px;"
+      *ngFor="let link of navLinks"
+      routerLink="{{ link.location }}"
+      routerLinkActive
+      #rla="routerLinkActive"
+      [active]="rla.isActive"
+    >
+    <div style="padding: 10px;" >       
+        <mat-icon class="example-tab-icon">{{ link.icon }}</mat-icon>
+           <div>{{ link.label  }}</div>
+      </div>    
+    </a>
+  </nav>
+</div>
+
+</div>
+</div>
