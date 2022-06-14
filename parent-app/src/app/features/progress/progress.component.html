@@ -1,5 +1,5 @@
-<div class="page-container">
-    <app-profile-header-card name="Meenakshi" heading="Progress"></app-profile-header-card>
+<div class="page-container" @fade >
+    <app-profile-header-card name="Meenakshi" heading="Progress" ></app-profile-header-card>
     <div style="margin-top: 35px;">
         <div class="header-badge">
             <div class="header-left">
@@ -20,7 +20,7 @@
     <div *ngFor="let student of childInfo">
         <mat-card class="student-card">
             <div class="header-section">
-                <div mat-card-avatar class="header-image"></div>
+                <img mat-card-avatar class="header-image" src="{{student.imageUrl}}" alt="Photo of a Shiba Inu" />
                 <mat-card-title-group>
                     <mat-card-title style="font-size: 1.2em; font-weight:600;">{{student.name}}</mat-card-title>
                     <mat-card-subtitle>
@@ -32,67 +32,24 @@
                 </mat-card-title-group>
             </div>
             <div class="card">
-                <table>
-                    <tr>
-                        <td>
-                            <p class="metric-name">EDUCATION</p>
-                            <p class="metric-value">{{student?.marks[0]}}/10 pts</p>
-                        </td>
-                        <td>
-                            <p class="metric-name">PHYSICAL WELLBEING</p>
-                            <p class="metric-value" style="color:rgb(75,137,220)">{{student.marks[1]}}/10 pts</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="metric-name">EXTRA CURRICULAR</p>
-                            <p class="metric-value" style="color:rgb(54,186,154)">{{student.marks[2]}}/10 pts</p>
-                        </td>
-                        <td>
-                            <p class="metric-name">EMOTIONAL WELLBEING</p>
-                            <p class="metric-value" style="color:rgb(216,112,173)">{{student.marks[3]}}/10 pts</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="metric-name">NUTRITION</p>
-                            <p class="metric-value" style="color:rgb(140,192,81)">{{student.marks[4]}}/10 pts</p>
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
+                <table style="width: 100%; margin-left: 10px;">
+                    <ng-container *ngFor="let item of student.metrics, let i = index">
+                        <tr>
+                            <td *ngIf="i%2==0" style="padding: 5px;">
+                                <p class="metric-name">{{getMetricLabel(student.metrics[i].name)}}</p>
+                                <p class="metric-value" [style.color]="getMetricColor(student.metrics[i].name)">
+                                    {{student.metrics[i]?.value}}/10 pts </p>
+                            </td>
+                            <td *ngIf="i%2==0 && i < student.metrics.length-1" style="padding: 5px;">
+                                <p class="metric-name">{{getMetricLabel(student.metrics[i+1].name)}}</p>
+                                <p class="metric-value" [style.color]="getMetricColor(student.metrics[i+1].name)">
+                                    {{student.metrics[i+1]?.value}}/10 pts</p>
+                            </td>
+                        </tr>
+                    </ng-container>
                 </table>
-                <!-- <div class="block_container">
-                <div class="bloc1">
-                    <p>EDUCATION</p>
-                    <p>{{student.marks[0]}}/10 pts</p>
-                </div>
-                <div class="bloc2">
-                    <p>PHYSICAL WELLBEING</p>
-                    <p>{{student.marks[1]}}/10 pts</p>
-                </div>
-            </div>
-            <div class="block_container">
-                <div class="bloc1">
-                    <p>EXTRA CURRICULAR</p>
-                    <p>{{student.marks[2]}}/10 pts</p>
-                </div>
-                <div class="bloc2">
-                    <p>EMOTIONAL WELLBEING</p>
-                    <p>{{student.marks[3]}}/10 pts</p>
-                </div>
-            </div>
-            <div class="block_container">
-                <div class="bloc1">
-                    <p>NUTRITION</p>
-                    <p>{{student.marks[4]}}/10 pts</p>
-                </div>
-            </div> -->
             </div>
         </mat-card>
-    
-    </div>
-    <br><br><br><br><br>
 
+    </div>
 </div>

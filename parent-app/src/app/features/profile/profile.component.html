@@ -1,3 +1,5 @@
+
+<div class="page-container">
 <section style="min-height: 90vh;" fxLayout="column" class="radial-gradient">
     <div fxLayout="row" class="example-button-row" style="padding: 2px;   margin:15px;   margin-top:30px; "
         fxLayoutAlign="start center">
@@ -52,10 +54,10 @@
                 <label><span contentEditable="true" style="font-weight: 600; font-size: small; ">Children</span></label>
             </div>
            
-            <span *ngFor="let child of childInfo">
-                <span class='app-profile-pic-card' [inData]="child" >
+            <div style="display: flex; overflow-x:scroll">
+                <span *ngFor="let child of childInfo" class='app-profile-pic-card' [inData]="child" >
                 </span>
-            </span> 
+            </div> 
 
             
         </mat-card>
@@ -81,3 +83,4 @@ border-top-right-radius: 12px;border-top-left-radius: 12px;">
 
 
 </section>
+</div>

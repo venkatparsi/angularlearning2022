@@ -1,21 +1,9 @@
-.page-container{
-  background-color: #f8f9fa;
-  margin: 12px;
-  padding: 10px;
-}
-  
-.student-card{
-  box-shadow: 0 8px 8px -6px #aaaaaa;
-  background-color: white;
-  border-radius: 10px;
-}
-.header-image {
-  background-image: url('../../../assets/images/avinashroa.png');
+.header-image { 
   background-size: cover;
   cursor: pointer;
-  width: 45px;
-  height: 45px;
-  padding: 5px;
+  width: 62px;
+  height: 62px;
+  padding: 2px;
 }
 .header-section{
   display: flex;
@@ -40,9 +28,7 @@
   justify-content: center;
   flex: 3;
 }
-.header-right{
 
-}
 .header-title, .header-subtitle{
   color: rgb(77,137,235);
   font-size: 1.5em;
@@ -55,41 +41,28 @@
  padding: 2px;
 }
 
-.metric-name{
-  color:gray;padding:5px;
-  font-size: 0.8em;
-}
 
 .student-card{
+  box-shadow: 0 8px 8px -6px #aaaaaa;
+  background-color: white;
+  border-radius: 10px;
   padding:10px;
   margin-top:20px;
   margin-bottom: 20px;
 }
+.metric-name{
+  font-family: Poppins;
+  letter-spacing: 0.36px;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: var(--unnamed-color-5f6368);
+}
 
 .metric-value{
-  color:mediumslateblue; font-weight: 600; font-size:1.1em; padding:5px;
-}
-
-  .badge-card{
-      min-width: 150 px;
-      padding-left: 20%;
-      padding-right: 20%;
-  }
-  .block_container {
-    display: inline-block;
-    /* justify-content: center; */
-  }
-  .bloc1{
-      float: left;
-  }
-  .bloc2{
-      float: right;
-  }
-  .div-left{
-    float:left;
-    padding-left:10px;
-}
-.div-right{
-    float:right;
-    padding-right:10px;
+  font-style: normal normal;
+  font-family: Poppins;
+  font-weight:500;
+  line-height: 26px;
+  font-size: 18px;
 }

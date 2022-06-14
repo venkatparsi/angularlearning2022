@@ -1,0 +1,11 @@
+{"METRICS":[
+    {"EDUCATION" : {"LABEL":"Education", "ICON":"metricicon.png","color":"#967bdc"}},
+    {"PHYSICAL" : {"LABEL":"Physical Wellbeing", "ICON":"metricicon.png","color":"#4B89DC"}},
+    {"EXTRA" : {"LABEL":"Extra Curricular", "ICON":"metricicon.png","color":"#37BB9B"}},
+    {"EMOTIONAL" : {"LABEL":"Emotional Wellbeing", "ICON":"metricicon.png","color":"#F198CD"}},
+    {"LITERACY" : {"LABEL":"Literacy", "ICON":"metricicon.png","color":"#FFA600"}},
+    {"NUTRITION" : {"LABEL":"Nutrition", "ICON":"metricicon.png","color":"#87C051"}},
+    {"NUMERACY" : {"LABEL":"Numeracy", "ICON":"metricicon.png","color":"#967bdc"}},
+    {"OTHER" : {"LABEL":"Other", "ICON":"metricicon.png","color":"black"}}
+]
+}

@@ -1,26 +1,28 @@
-<div class="parent">
-
-<div class="child">
-    <router-outlet>  
+<div class="parent-container" style="flex-direction: column;">
+  <div class="child-centered">
+    <router-outlet>
     </router-outlet>
-<div style="height: 150px;">&nbsp;</div>
-<div id="bottomdiv" class="parent">
-<nav mat-tab-nav-bar class="child mat-tab-group-inverted-header main-nav" >
-    <a
-      mat-tab-link style="height: 80px; width: 40px;"
-      *ngFor="let link of navLinks"
-      routerLink="{{ link.location }}"
-      routerLinkActive
-      #rla="routerLinkActive"
-      [active]="rla.isActive"
-    >
-    <div style="padding: 10px;" >       
-        <mat-icon class="example-tab-icon">{{ link.icon }}</mat-icon>
-           <div>{{ link.label  }}</div>
-      </div>    
-    </a>
-  </nav>
+    <div style="height: 150px;">&nbsp;</div>   
+  </div>
+  <footer id="bottomdiv" class="parent-container">
+    <nav mat-tab-nav-bar class="child-centered mat-tab-group-inverted-header" >
+      <a mat-tab-link style="height: 80px; width: 40px;" *ngFor="let link of navLinks"
+        routerLink="{{ link.location }}" id="{{link.id}}"
+         (click)="setActiveLink(link,link.id)"         
+         >
+        <div style="padding: 10px;">
+          <mat-icon class="example-tab-icon">{{ link.icon }}</mat-icon>
+          <div>{{ link.label }}</div>
+        </div>
+      </a>
+    </nav>
+  </footer>
 </div>
 
-</div>
-</div>
+<!--
+      routerLink="{{ link.location }}"
+          routerLinkActive
+           #rla="routerLinkActive"         
+           (click)="activeLink = link"
+           [active]="activeLink === link"
+-->

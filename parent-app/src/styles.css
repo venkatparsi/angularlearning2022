@@ -1,4 +1,3 @@
-
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
@@ -7,46 +6,379 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: var(--saahja-font-family-poppins);
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/********** Global Styles for all pages *********************/
+
+.page-container {
+	background-color: #f8f9fa;
+	padding: 10px;
+	width: 90%;
+	min-width: 378px;
+}
+
+.parent-container,
+.d-flex {
+	display: flex;
+}
+
+.child-centered,
+.m-auto {
+	/* Magic! */
+	margin: auto;	
+	max-width: 430px;
+	min-width: 220px;
+}
+
+#topdiv, #bottomdiv{
+	position:fixed; 
+	left: 0px;
+	width: 100%;
+	color: #CCC;	
+}
+#topdiv{top:0px; z-index: 100;}
+#bottomdiv {bottom:0px;}
+
+:root {
+
+	/* Colors: */
+	--saahja-color-202124: #202124;
+	--saahja-color-80868b: #80868B;
+	--saahja-color-5f6368: #5F6368;
+	--saahja-color-9aa0a6: #9AA0A6;
+	--saahja-color-1e1e1e: #1E1E1E;
+
+	/* Font/text values */
+	--saahja-font-family-poppins: Poppins;
+	--saahja-font-style-normal: normal;
+	--saahja-font-weight-medium: medium;
+	--saahja-font-weight-bold: bold;
+	--saahja-font-weight-normal: normal;
+	--saahja-font-size-10: 10px;
+	--saahja-font-size-12: 12px;
+	--saahja-font-size-14: 14px;
+	--saahja-font-size-16: 16px;
+	--saahja-font-size-18: 18px;
+	--saahja-font-size-20: 20px;
+	--saahja-font-size-24: 24px;
+	--saahja-font-size-34: 34px;
+	--saahja-font-size-48: 48px;
+	--saahja-character-spacing-0: 0px;
+	--saahja-character-spacing-1: 1px;
+	--saahja-character-spacing-0-36: 0.36px;
+	--saahja-line-spacing-16: 16px;
+	--saahja-line-spacing-18: 18px;
+	--saahja-line-spacing-20: 20px;
+	--saahja-line-spacing-21: 21px;
+	--saahja-line-spacing-24: 24px;
+	--saahja-line-spacing-25: 25px;
+	--saahja-line-spacing-26: 26px;
+	--saahja-line-spacing-28: 28px;
+	--saahja-line-spacing-30: 30px;
+	--saahja-line-spacing-35: 35px;
+	--saahja-line-spacing-48: 48px;
+	--saahja-line-spacing-64: 64px;
+	--saahja-text-transform-uppercase: uppercase;
+}
+
+/* Character Styles */
+.overline-poppins-—-10pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-medium);
+	font-size: var(--saahja-font-size-10);
+	line-height: var(--saahja-line-spacing-16);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-9aa0a6);
+}
+
+.overline-poppins-—-10pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-medium);
+	font-size: var(--saahja-font-size-10);
+	line-height: var(--saahja-line-spacing-16);
+	letter-spacing: var(--saahja-character-spacing-1);
+	color: var(--saahja-color-5f6368);
+	text-transform: var(--saahja-text-transform-uppercase);
+}
+
+.caption-poppins-—-12pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-normal);
+	font-size: var(--saahja-font-size-12);
+	line-height: var(--saahja-line-spacing-20);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-5f6368);
+}
+
+.caption-poppins-—-12pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-normal);
+	font-size: var(--saahja-font-size-12);
+	line-height: var(--saahja-line-spacing-20);
+	letter-spacing: var(--saahja-character-spacing-0-36);
+	color: var(--saahja-color-5f6368);
+	text-transform: var(--saahja-text-transform-uppercase);
+}
+
+.button-2-poppins-—-14pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-medium);
+	font-size: var(--saahja-font-size-14);
+	line-height: var(--saahja-line-spacing-21);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-1e1e1e);
+}
+
+.button-1-poppins-—-16pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-medium);
+	font-size: var(--saahja-font-size-16);
+	line-height: var(--saahja-line-spacing-28);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-1e1e1e);
+}
+
+.body-2-poppins-—-14pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-normal);
+	font-size: var(--saahja-font-size-14);
+	line-height: var(--saahja-line-spacing-25);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-5f6368);
+}
+
+.body-1-poppins-—-16pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-normal);
+	font-size: var(--saahja-font-size-16);
+	line-height: var(--saahja-line-spacing-30);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-5f6368);
+}
+
+.sh2-poppins-—-14pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-medium);
+	font-size: var(--saahja-font-size-14);
+	line-height: var(--saahja-line-spacing-21);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-80868b);
+}
+
+.sh1-poppins-—-16pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-medium);
+	font-size: var(--saahja-font-size-16);
+	line-height: var(--saahja-line-spacing-25);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-80868b);
+}
+
+.h7-poppins-—-14pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-normal);
+	font-size: var(--saahja-font-size-14);
+	line-height: var(--saahja-line-spacing-18);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-1e1e1e);
+}
+
+.h6-poppins-—-16pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-medium);
+	font-size: var(--saahja-font-size-16);
+	line-height: var(--saahja-line-spacing-24);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-202124);
+}
+
+.h5-poppins-—-18pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-medium);
+	font-size: var(--saahja-font-size-18);
+	line-height: var(--saahja-line-spacing-26);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-202124);
+}
+
+.h4-poppins-—-20pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-bold);
+	font-size: var(--saahja-font-size-20);
+	line-height: var(--saahja-line-spacing-28);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-202124);
+}
+
+.h3-poppins-—-24pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-medium);
+	font-size: var(--saahja-font-size-24);
+	line-height: var(--saahja-line-spacing-35);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-202124);
+}
+
+.h2-poppins-—-34pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-bold);
+	font-size: var(--saahja-font-size-34);
+	line-height: var(--saahja-line-spacing-48);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-202124);
+}
+
+.h1-poppins-—-48pt {
+	font-family: var(--saahja-font-family-poppins);
+	font-style: var(--saahja-font-style-normal);
+	font-weight: var(--saahja-font-weight-bold);
+	font-size: var(--saahja-font-size-48);
+	line-height: var(--saahja-line-spacing-64);
+	letter-spacing: var(--saahja-character-spacing-0);
+	color: var(--saahja-color-202124);
 }
